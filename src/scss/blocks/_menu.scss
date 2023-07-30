@@ -1,0 +1,60 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    margin: 14px 10px 20px 10px;
+    width: 256px;
+    overflow: auto;
+    padding: 53px 31px;
+    background: white;
+    border-radius: 20px;
+    transition: right 0.5s;
+
+    &._active {
+        right: 0;
+    }
+
+    &__btn {
+        display: none;
+
+        @media (max-width: 680px) {
+            display: flex;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 25px;
+        right: 18px;
+    }
+
+    .nav__list {
+        flex-direction: column;
+    }
+
+    .nav__item {
+        color: #22253B;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 40px; /* 20px */
+
+        a {
+            display: inline-flex;
+        }
+    }
+
+    &__login {
+        padding: 15px 31px;
+        background-color: var(--accent2-color);
+        span {
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 100%; /* 15.66px */
+        }
+    }
+}
