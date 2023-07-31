@@ -1,5 +1,6 @@
 .header {
     position: absolute;
+    z-index: 1;
     left: 0;
     right: 0;
     padding: 12px 0;
@@ -48,8 +49,10 @@
         line-height: 104.4%; /* 13.572px */
         transition: color 0.3s;
 
-        &:hover {
-            color: var(--accent1-color);
+        @media (any-hover: hover) {
+            &:hover {
+                color: var(--accent1-color);
+            }
         }
 
         @media (max-width: 330px) {
@@ -60,13 +63,16 @@
     &__login {
         background-color: var(--accent2-color);
         padding: 8px 15px;
+        gap: 7px;
         font-size: 12px;
         font-weight: 500;
         line-height: 104.4%; /* 12.528px */
         transition: background-color 0.3s;
 
-        &:hover {
-            background-color: var(--accent1-color);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: var(--accent1-color);
+            }
         }
     }
 }

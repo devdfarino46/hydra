@@ -13,8 +13,10 @@
         line-height: 104.4%; /* 13.572px */
         transition: color 0.3s;
 
-        &:hover {
-            color: var(--accent1-color);
+        @media (any-hover: hover) {
+            &:hover {
+                color: var(--accent1-color);
+            }
         }
     }
 }

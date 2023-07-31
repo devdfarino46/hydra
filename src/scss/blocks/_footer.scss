@@ -1,0 +1,136 @@
+.footer {
+    // Top
+    &__top {
+        display: flex;
+        padding-top: 66px;
+        padding-bottom: 47px;
+        gap: 43px 64px;
+        border-bottom: 1px solid #D8D8D8;
+
+        @media (max-width: 900px) {
+            flex-direction: column;
+            padding-bottom: 32px;
+            padding-top: 40px;
+        }
+    }
+
+    &__logo-wrapper {
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @media (max-width: 900px) {
+            align-items: center;
+            margin-right: 0;
+            gap: 25px;
+        }
+    }
+
+    &__nav {
+        align-self: center;
+        margin-right: 102px;
+        justify-content: center;
+
+        @media (max-width: 900px) {
+            margin-right: 0;
+        }
+    }
+
+    &__nav-list {
+        flex-direction: column;
+        gap: 25px;
+
+        @media (max-width: 900px) {
+            text-align: center;
+        }
+    }
+
+    &__contacts-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        @media (max-width: 900px) {
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &__tel {
+        color: var(--accent2-color);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23px; /* 143.75% */
+    }
+
+    &__email {
+        color: #22253B;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23px; /* 143.75% */
+    }
+
+    &__requisites {
+        margin-top: 61px;
+        color: #8E8E8E;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 23px; /* 176.923% */
+
+        @media (max-width: 900px) {
+            margin-top: 35px;
+        }
+    }
+
+    // Bottom
+    &__bottom {
+        padding-top: 28px;
+        padding-bottom: 32px;
+        display: flex;
+        align-items: center;
+        gap: 13px 64px;
+
+        @media (max-width: 900px) {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        @media (max-width: 900px) {
+            padding-top: 25px;
+            padding-bottom: 23px;
+        }
+    }
+
+    &__botom-text {
+        display: inline-flex;
+        color: #8E8E8E;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23px; /* 143.75% */
+    }
+
+    &__legal-wrapper {
+        display: flex;
+        gap: 8px 64px;
+
+        @media (max-width: 900px) {
+            flex-direction: column;
+        }
+    }
+
+    &__copyright {
+        margin-right: auto;
+
+        @media (max-width: 900px) {
+            margin-right: 0;
+        }
+    }
+
+    &__legal {
+
+        @media (max-width: 900px) {
+            color: var(--accent1-color);
+        }
+    }
+}
